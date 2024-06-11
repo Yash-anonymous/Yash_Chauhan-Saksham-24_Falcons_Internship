@@ -29,7 +29,7 @@ print(np.std(n))
 
 #4
 m=np.array([[1,2,3],[4,5,6],[7,8,9]])
-n=np.array([1,1,1],[2,2,2],[3,3,3])
+n=np.array([[1,1,1],[2,2,2],[3,3,3]])
 print(m,"\n")
 print(m[1])
 print(m[:,2])
@@ -40,3 +40,8 @@ print(np.transpose(m))
 print(m.dot(n))
 print("\n")
 print(n.dot(m))
+print(m[1:3,0:2])
+
+#6
+np.save("numpy_array",n)
+np.load("numpy_array.npy")
