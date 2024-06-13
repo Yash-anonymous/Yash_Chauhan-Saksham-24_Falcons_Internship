@@ -59,3 +59,11 @@ three=[40,32,20,45,75,95]
 data=list([one,two,three])
 plt.boxplot(data)
 plt.show()
+#9
+plt.violinplot(data)
+plt.show()
+#10
+fruits=["Mango","Lichi","Watermelon","Pineapple"]
+percentage=[70,50,90,60]
+plt.pie(percentage,labels=fruits,autopct='0.1f%%')
+plt.show()
