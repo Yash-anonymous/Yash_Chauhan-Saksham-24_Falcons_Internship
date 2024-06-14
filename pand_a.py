@@ -1,6 +1,6 @@
 import pandas as pd
 #1
-s=pd.Series([1,2,93,4,5],index=['a','b','c','d','e'])
+s=pd.Series([1,2,3,4,5],index=['a','b','c','d','e'])
 print(s)
 print(type(s))
 #2
