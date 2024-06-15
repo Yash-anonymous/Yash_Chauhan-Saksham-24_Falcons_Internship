@@ -57,5 +57,5 @@ def fill():
         nrr1(runs,overs,oruns,oovers)
     tournament_data(t_name,matches,win,loss,draw,nrr1(runs,overs,oruns,oovers))
 
-for _ in range(2):
+for _ in range(1):
     fill()
