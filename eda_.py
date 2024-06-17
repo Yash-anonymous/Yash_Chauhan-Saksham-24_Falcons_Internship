@@ -1,5 +1,6 @@
 import seaborn as sns
 from matplotlib import pyplot as plt
+import pandas as pd
 #1
 sns.get_dataset_names()
 tit=sns.load_dataset('titanic')
@@ -53,4 +54,9 @@ plt.show()
 sns.barplot(x='pclass',y='fare',hue='sex',data=tit)
 plt.show()
 #14
-sns.boxplot(x='sex',y='')
+sns.boxplot(x='sex',y='age',hue='sex',data=tit)
+plt.show()
+#15
+print(pd.crosstab(tit['pclass'],tit['survived']))
+sns.heatmap(pd.crosstab(tit['pclass'],tit['survived']))
+plt.show()
