@@ -3,6 +3,7 @@ from matplotlib import pyplot as plt
 import pandas as pd
 data=pd.read_excel("D:\data.xlsx")
 print(data)
+print(data.describe())
 #line graph
 sns.lineplot(x='pizza_size',y='total_price',data=data,hue='pizza_category',style='pizza_category',markers=True)
 plt.show()
