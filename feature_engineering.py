@@ -11,7 +11,7 @@ print(df.head())
 df2=df[['survived','pclass','age','parch']]
 print(df2.head())
 #3
-df3=df2.fillna(df.mean())
+df3=df2.fillna(df2.mean())
 print(df3.head())
 #4
 x=df3[['pclass','age','parch']]
@@ -19,7 +19,7 @@ y=df2[['survived',]].fillna(df2.mean())
 print(x)
 print(y)
 #5
-x_train,x_test,y_train=train_test_split(x,y,test_size=0.3,random_state=51)
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=51)
 print(x_train)
 print(x_train.shape)
 print(x_test)
